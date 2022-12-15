@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Much</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="content">
+      <div class="container">
+        <h1 class="h1">Quanto vai dar? 🛒</h1>
+        <form id="form">
+          <label for="item">Adicione um produto:</label>
+          <div class="inputs">
+            <input
+              id="inputItem"
+              type="text"
+              name="item"
+              id="item"
+              placeholder="Papel higienico."
+            />
+            <input
+              id="inputQnt"
+              type="number"
+              name="qnt"
+              id="qnt"
+              placeholder="1"
+              min="1"
+            />
+            <input
+              id="inputPrice"
+              type="number"
+              name="price"
+              id="price"
+              step="0.01"
+              placeholder="R$ 5.97"
+            />
+          </div>
+          <div class="commands">
+            <button id="addBtn" type="submit">Adicionar</button>
+            <button id="cleanBtn" type="button">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <div class="list">
+        <div id="result">
+          <h1 class="titles">Total:</h1>
+          <h2 class="titles" id="total"></h2>
+        </div>
+        <div class="itemsAdded">
+          <ul id="ulItems">
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./scrip.js"></script>
+  <script
+    src="https://kit.fontawesome.com/de45b7e88c.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
